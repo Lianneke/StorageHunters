@@ -16,4 +16,8 @@ public class Klant {
     public String getNaam() {
         return naam;
     }
+
+    public ArrayList<Opslagruimte> getOpslagruimtes() {
+        return opslagruimtes;
+    }
 }

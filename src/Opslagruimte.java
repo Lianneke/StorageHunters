@@ -13,7 +13,7 @@ public class Opslagruimte {
         this.prijsPerMaand = prijsPerMaand;
     }
 
-    public void klantToewijzenAanOpslagruimte(Klant klant){
+    public void klantToewijzenAanOpslagruimte(){
             this.klant = klant;
     }
 
@@ -40,5 +40,15 @@ public class Opslagruimte {
     public Klant getKlant() {
         return klant;
     }
+
+    @Override
+    public String toString() {
+        return "ID = " + ID +
+                ", maxCapaciteit = " + maxCapaciteit + "m2" +
+                ", prijsperMaand = € " + prijsPerMaand +
+                ", verzekering = " + verzekering +
+                ", verzekerdBedrag = € " + verzekerdBedrag;
+    }
+
 }
 
